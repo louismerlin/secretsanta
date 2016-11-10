@@ -1,6 +1,10 @@
 # secretsanta
 A ruby script for Secret Santa.
 
+## What is this ?
+
+This simple ruby script will send a mail to your friends to tell them who they have to offer a present to this year for your Secret Santa.
+
 ## Wrapping up the presents
 
 In order to run the script, you need [ruby](https://www.ruby-lang.org/en/).
