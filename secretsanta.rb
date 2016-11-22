@@ -40,7 +40,6 @@ for person in people
         subject "Your secret santa match!!"
         body "Hi " + person[:name] + "!\n\nYour secret santa match this year is " + people[person[:chosen]][:name] + ".\n\nWith love,\nSanta"
     end
-		puts "from " + person[:name] + " to " + people[person[:chosen]][:name]
 end
 
 gmail.logout
