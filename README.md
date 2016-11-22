@@ -19,6 +19,10 @@ Open *people.txt* with your favorite editor, and follow the template to add peop
 ```
 Name email@anything.really
 ```
+If someone does not want to be matched with another person, use this format (only on the last of the two !)
+```
+Romeo romeo@verona.it NOT Juliet
+```
 
 ## Deliver the presents
 
