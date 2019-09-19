@@ -1,0 +1,17 @@
+{
+  "name": "secretsanta",
+  "version": "0.0.0",
+  "main": "src/people.js",
+  "private": true,
+  "repository": "https://github.com/louismerlin/secretsanta",
+  "author": "Louis Merlin <louis_merlin1@yahoo.fr>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/people.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.3.0",
+    "read": "^1.0.7",
+    "shuffle-array": "^1.0.1"
+  }
+}

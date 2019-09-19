@@ -1,0 +1,23 @@
+{
+  "people": [
+    {
+      "name": "John",
+      "email": "john@example.com",
+      "not": ["Ella"]
+    }, {
+      "name": "Ella",
+      "email": "ella@example.com",
+      "not": ["John"]
+    }, {
+      "name": "Ruben",
+      "email": "ruben@example.com"
+    }, {
+      "name": "Bob",
+      "email": "bob@example.com",
+      "not": ["Ruben"]
+    }, {
+      "name": "Alice",
+      "email": "alice@example.com"
+    }
+  ]
+}
