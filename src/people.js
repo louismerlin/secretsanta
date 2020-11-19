@@ -4,6 +4,10 @@ const read = require('./readAsync')
 let { people } = require('./people.json')
 const { subject, text } = require('./email')
 
+const sleep = () => new Promise((resolve, _) => {
+  setTimeout(resolve, 1000)
+})
+
 async function main () {
   do {
     const names = shuffle(people.map(({ name }) => name))
@@ -20,15 +24,18 @@ async function main () {
 
   const mailer = nodemailer.createTransport({ host, auth: { user, pass } })
 
-  people.forEach(({ email, name, chosen }) => {
+  function sendMail({ email, name, chosen }) {
     mailer.sendMail({
       from: `"Secret Santa" <${user}>`,
       to: email,
       subject,
       text: text(name, chosen)
     })
-  })
-
+  }
+  for (let person of people) {
+    await sleep()
+    sendMail(person)
+  }
 }
 
 main()
